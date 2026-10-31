@@ -1,0 +1,14 @@
+pour changer le datasource aller sur main et mettre en commentaire le
+datasource acif et enlever le datasource que vous voulez tester
+
+public class Main {
+
+    static void main(String[] args) {
+
+        //choose witch datasource to use and comment the others
+        //DAOFactory.useJPA();
+        //DAOFactory.useJDBC();
+        DAOFactory.useMock();
+
+        Application.launch(DoctorView.class, args);
+    }
